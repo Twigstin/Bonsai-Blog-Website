@@ -542,21 +542,6 @@ footer {
     font-weight: bold;
 }
 
-#last-div {
-    height: 1px;
-    width: 85%;
-    background-color:  rgb(200, 200, 200);
-    margin: 50px auto 25px auto;
-    border: none;
-}
-#last-text {
-    color: #4c4d5f;
-    font-size: 13px;
-    text-align: center;
-    width: 75%;
-    margin: auto;
-    line-height: 20px;
-}
 
 @media (min-width: 900px) and (max-width: 1200px) {
     header {
@@ -692,4 +677,5 @@ footer {
     }
 
 }
+
 
