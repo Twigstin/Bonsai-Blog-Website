@@ -517,6 +517,7 @@ footer {
     border: none;
     padding: 0;
     gap: 70px;
+    margin-bottom: 50px;
 }
 #foot-info > div {
     border: none;
@@ -691,3 +692,4 @@ footer {
     }
 
 }
+
