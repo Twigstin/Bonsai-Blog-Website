@@ -42,7 +42,7 @@ btnOne.forEach(button => {
     })
 })
 
-btnOTwo.forEach(button => {
+btnTwo.forEach(button => {
     button.addEventListener("pointerdown", () => {
         button.classList.add("pressed");
     })
@@ -78,18 +78,18 @@ btnThree.forEach(button => {
 
 
 login.addEventListener("pointerdown", () => {
-    button.classList.add("pressed");
+    login.classList.add("pressed");
 })
 
 login.addEventListener("pointerup", () => {
-    button.classList.remove("pressed");
+    login.classList.remove("pressed");
 })
 login.addEventListener("pointerleave", () => {
-    button.classList.remove("pressed");
+    login.classList.remove("pressed");
 })
 
 login.addEventListener("pointercancel", () => {
-    button.classList.remove("pressed");
+    login.classList.remove("pressed");
 })
 
 
@@ -97,16 +97,29 @@ login.addEventListener("pointercancel", () => {
 
 
 startFree.addEventListener("pointerdown", () => {
-    button.classList.add("pressed");
+    startFree.classList.add("pressed");
 })
 
 startFree.addEventListener("pointerup", () => {
-    button.classList.remove("pressed");
+    startFree.classList.remove("pressed");
 })
 startFree.addEventListener("pointerleave", () => {
-    button.classList.remove("pressed");
+    startFree.classList.remove("pressed");
 })
 
 startFree.addEventListener("pointercancel", () => {
-    button.classList.remove("pressed");
+    startFree.classList.remove("pressed");
 })
+
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+        }
+    })
+}, { threshold: 0.2 });
+reveals.forEach(reveal => observer.observe(reveal));
