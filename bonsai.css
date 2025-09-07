@@ -3,13 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'inter';
+    src: url('Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserrat';
+    src: url('Montserrat-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#brand-name {
+    font-family: 'montserrat', Georgia, 'Times New Roman', Times, serif;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 body {
     background-color: rgb(245, 245, 245);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     width: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'inter', sans-serif;
 }
 header {
     background-color: transparent;
@@ -517,7 +541,6 @@ footer {
     border: none;
     padding: 0;
     gap: 70px;
-    margin-bottom: 50px;
 }
 #foot-info > div {
     border: none;
@@ -542,6 +565,21 @@ footer {
     font-weight: bold;
 }
 
+#last-div {
+    height: 1px;
+    width: 85%;
+    background-color:  rgb(200, 200, 200);
+    margin: 50px auto 25px auto;
+    border: none;
+}
+#last-text {
+    color: #4c4d5f;
+    font-size: 13px;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+    line-height: 20px;
+}
 
 @media (min-width: 900px) and (max-width: 1200px) {
     header {
@@ -675,9 +713,4 @@ footer {
         right: -100%;
         width: 100%;
     }
-
 }
-
-
-
-
