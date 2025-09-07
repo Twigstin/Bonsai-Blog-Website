@@ -5,13 +5,13 @@
 }
 @font-face {
     font-family: 'inter';
-    src: url('Inter-Regular.woff') format('woff');
+    src: url('bonsai files/Inter-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'montserrat';
-    src: url('Montserrat-Bold.woff') format('woff');
+    src: url('bonsai files/Montserrat-Bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -714,3 +714,4 @@ footer {
         width: 100%;
     }
 }
+
